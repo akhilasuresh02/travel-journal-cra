@@ -36,13 +36,9 @@ function TravelCard({ item }) {
         <div className="card-meta">
           <span className="pin">📍</span>
           <span className="country">{item.country}</span>
-          <a
-            className="maps"
-            href="#"
-            onClick={(e) => e.preventDefault()}
-          >
-            View on Google Maps
-          </a>
+          <button className="maps" type="button">
+              View on Google Maps
+          </button>
         </div>
         <h2 className="title">{item.title}</h2>
         <div className="dates">{item.dates}</div>
